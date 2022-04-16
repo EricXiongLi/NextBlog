@@ -1,9 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import { PostCard, Categories, PostWidget } from "../components/index";
+import Head from "next/head";
+import { Categories, PostCard, PostWidget } from "../components/index";
+import FeaturedPosts from "../sections/FeaturedPosts";
 import { getPosts } from "../services";
-import FeaturedPosts from "../sections/FeaturedPost";
 
 export default function Home({ posts }) {
   return (
